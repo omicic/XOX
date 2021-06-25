@@ -113,9 +113,9 @@ function upisiuresenja(r, s) {
 function winner(s) {
 
   if (wins) {
-        (s === compsymbol) ? alert("winner is " + "COMPUTER"): alert("winner is " + "YOU");
+        (s === compsymbol) ? alert("winner is COMPUTER"): alert("winner is YOU");
     } else {
-        alert("winner is " + "NOONE")
+        alert("winner is NOONE")
     }
 
     boxes.forEach(e => e.removeEventListener('click', igrasTi))
