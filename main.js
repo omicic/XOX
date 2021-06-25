@@ -83,7 +83,7 @@ function igraKomp() {
 function upisiuresenja(r, s) {
     resenja.forEach((el, index) => {
 
-        console.log(index)
+        //console.log(index)
         for (let i = 0; i < 3; i++) {
             if (el[i] == r) {
                 el[i] = s;
