@@ -13,7 +13,7 @@ let resenja = [
 ]
 
 //pomocni niz za selektovanje boxova za bojenje
-let zaboxove = [
+const zaboxove = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -34,8 +34,9 @@ let boxes = document.querySelectorAll('.box');
 boxes.forEach(box => box.addEventListener('click', igrasTi))
 
 
-let usersymbol = prompt("Izaberite X ili O");
-if (usersymbol === "O") {
+let usersymbol = prompt("Izaberite X ili O").toUpperCase();
+
+if (usersymbol == "O") {
     compsymbol = "X"
     igraKomp();
 } else {
